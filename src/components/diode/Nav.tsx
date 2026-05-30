@@ -5,6 +5,8 @@ const links = [
   ["Mathematics", "#math"],
   ["Types", "#types"],
   ["Reality", "#loopholes"],
+  ["Reference", "#facts"],
+  ["Ask AI", "#ask"],
 ];
 
 export function Nav() {

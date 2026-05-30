@@ -1,29 +1,33 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav, Footer } from "@/components/diode/Nav";
+import { Hero } from "@/components/diode/Hero";
+import { AnatomySection } from "@/components/diode/AnatomySection";
+import { MathematicsCard } from "@/components/diode/MathematicsCard";
+import { RealWorldGrid } from "@/components/diode/RealWorldGrid";
+import { LoopholesWarning } from "@/components/diode/LoopholesWarning";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Diodes · Structural, Mathematical & Real-World Breakdown" },
+      { name: "description", content: "An interactive WebGL exploration of diodes — P-N junctions, Shockley equation, Zener, Schottky, LEDs and the engineering trade-offs. By Anand, ITM Gwalior." },
+      { property: "og:title", content: "Diodes · The Electronic Valve" },
+      { property: "og:description", content: "Live 3D P-N junction visualizer with bias control, Shockley math, and real-world diode tear-downs." },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="min-h-screen text-white antialiased">
+      <Nav />
+      <Hero />
+      <AnatomySection />
+      <MathematicsCard />
+      <RealWorldGrid />
+      <LoopholesWarning />
+      <Footer />
+    </main>
   );
 }

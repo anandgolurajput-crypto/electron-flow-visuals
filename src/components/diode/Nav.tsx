@@ -35,9 +35,9 @@ export function Footer() {
     <footer className="border-t border-white/5 mt-10">
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-10 flex flex-col md:flex-row gap-4 items-start md:items-center justify-between text-sm">
         <p className="text-white tracking-tight">
-          Engineered & Architected by <span className="bg-gradient-to-r from-sky-300 to-violet-300 bg-clip-text text-transparent font-semibold">Anand</span>
+          Made by <span className="bg-gradient-to-r from-sky-300 to-violet-300 bg-clip-text text-transparent font-semibold">Anand</span>
         </p>
-        <p className="text-slate-500 font-mono text-xs">
+        <p className="text-slate-400 font-mono text-xs">
           ITM Gwalior · Branch: CSE-AIML · Department: Basic Electrical & Electronic Engg.
         </p>
       </div>

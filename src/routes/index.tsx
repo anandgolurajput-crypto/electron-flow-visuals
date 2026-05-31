@@ -8,6 +8,7 @@ import { LoopholesWarning } from "@/components/diode/LoopholesWarning";
 import { DiodeFactsGrid } from "@/components/diode/DiodeFactsGrid";
 import { GeminiChat } from "@/components/diode/GeminiChat";
 import { WelcomeGate } from "@/components/diode/WelcomeGate";
+import { SyllabusSection } from "@/components/diode/SyllabusSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,6 +32,7 @@ function Index() {
         <MathematicsCard />
         <RealWorldGrid />
         <LoopholesWarning />
+        <SyllabusSection />
         <DiodeFactsGrid />
         <GeminiChat />
         <Footer />

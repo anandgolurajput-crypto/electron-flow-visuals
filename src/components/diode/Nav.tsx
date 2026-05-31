@@ -5,6 +5,7 @@ const links = [
   ["Mathematics", "#math"],
   ["Types", "#types"],
   ["Reality", "#loopholes"],
+  ["Syllabus", "#syllabus"],
   ["Reference", "#facts"],
   ["Ask AI", "#ask"],
 ];

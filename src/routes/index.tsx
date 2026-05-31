@@ -32,6 +32,7 @@ function Index() {
         <MathematicsCard />
         <RealWorldGrid />
         <LoopholesWarning />
+        <SyllabusSection />
         <DiodeFactsGrid />
         <GeminiChat />
         <Footer />

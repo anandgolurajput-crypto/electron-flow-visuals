@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
 import { DiodeLogicVisualizer } from "./DiodeLogicVisualizer";
 import { ArrowDown } from "lucide-react";
+import { useVisitorName } from "./WelcomeGate";
 
 export function Hero() {
+  const name = useVisitorName();
   return (
     <section className="relative max-w-7xl mx-auto px-6 md:px-10 pt-20 md:pt-28 pb-12">
       <div className="grid lg:grid-cols-[1.05fr_1.4fr] gap-10 lg:gap-14 items-center">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-            className="text-xs uppercase tracking-[0.3em] text-sky-400 font-mono"
+            className="text-xs uppercase tracking-[0.3em] text-sky-300 font-mono"
           >
-            Basic Electrical & Electronic Engg · CSE-AIML
+            {name ? `Hello, ${name} · ` : ""}Basic Electrical & Electronic Engg · CSE-AIML
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.05 }}
